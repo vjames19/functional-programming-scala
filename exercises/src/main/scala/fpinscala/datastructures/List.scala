@@ -116,7 +116,7 @@ object List { // `List` companion object. Contains functions for creating and wo
   }
 
   def sumLists(a: List[Int], b: List[Int]): List[Int] = zipWith(a, b)(_ + _)
-  
+
   def zipWith[A, B, C](a: List[A], b: List[B])(f: (A, B) => C): List[C] = {
     (a, b) match {
       case (Nil, _) => Nil
