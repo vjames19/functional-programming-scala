@@ -14,6 +14,8 @@ shell, which you can fill in and modify while working through the chapter.
 */
 
 trait Prop {
+  def check: Unit
+  def &&(p: Prop): Prop = ???
 }
 
 object Prop {
